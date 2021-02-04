@@ -15,13 +15,13 @@ export class ActionButtonComponent implements OnInit {
 
   @Output() clicked: EventEmitter<boolean> = new EventEmitter();
 
-  onUserClicked(): void {
-    this.clicked.emit(true);
-  }
-
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onUserClicked(): void {
+    this.clicked.emit(true);
   }
 
 }
