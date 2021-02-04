@@ -13,6 +13,11 @@ export class ActionButtonGroupComponent implements OnInit {
 
   @Output() deleteClick: EventEmitter<boolean> = new EventEmitter();
 
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
   onSelectButtonClick(): void {
     this.selectClick.emit(true);
   }
@@ -21,12 +26,6 @@ export class ActionButtonGroupComponent implements OnInit {
   }
   onDeleteButtonClick(): void {
     this.deleteClick.emit(true);
-  }
-
-
-  constructor() { }
-
-  ngOnInit(): void {
   }
 
 }

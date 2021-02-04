@@ -10,7 +10,7 @@ import { UserService } from './service/user.service';
 export class AppComponent {
   title = 'The good Angular programmer';
   userList: User[] = [];
-  currentUser: User = new User;
+  currentUser: User = new User();
 
   constructor(private userService: UserService) {
 

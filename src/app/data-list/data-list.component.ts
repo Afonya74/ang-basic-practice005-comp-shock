@@ -23,7 +23,6 @@ export class DataListComponent implements OnInit {
     this.deleteClick.emit(user);
   }
 
-
   constructor() { }
 
   ngOnInit(): void {
