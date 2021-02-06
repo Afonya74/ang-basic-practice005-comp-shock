@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { User } from '../model/user';
+import { User } from 'src/app/model/user';
+
 
 @Component({
   selector: 'app-data-list',
